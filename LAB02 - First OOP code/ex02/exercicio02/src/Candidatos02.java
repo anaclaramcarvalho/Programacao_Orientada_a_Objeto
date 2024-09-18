@@ -4,8 +4,8 @@ public class Candidatos02 {
         private String genero;
         private String cargo ;
         private double bens;
-        private boolean reeleicao;
         private int numero_partido;
+        private boolean reeleicao;
 
         public void setNome(String Nome){
             this.nome = Nome;
@@ -21,7 +21,7 @@ public class Candidatos02 {
             return data;
         }
 
-        public void setGenero(String genero){
+        public void setGenero(String genero) {
              this.genero = genero;
         }
         public String getGenero(){
@@ -36,10 +36,10 @@ public class Candidatos02 {
         }
 
         public void setBens(double bens){
-             this.bens = bens;
+            this.bens = bens;
         }
         public double getBens(){
-             return bens;
+            return bens;
         }
 
 
@@ -55,7 +55,7 @@ public class Candidatos02 {
             this.numero_partido = numero_partido;
         }
         public int getNumero_partido(){
-             return numero_partido;
+            return numero_partido;
         }
 
         public String imprimirCandidatos(){

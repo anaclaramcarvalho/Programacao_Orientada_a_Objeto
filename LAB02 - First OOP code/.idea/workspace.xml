@@ -13,10 +13,15 @@
       <change afterPath="$PROJECT_DIR$/ex03/about.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ex04/about.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ex05/about.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex06/about.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex07/about.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB03 - Class Relations/enunciado.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../samples/TADProduto/.vscode/c_cpp_properties.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../samples/TADProduto/.vscode/launch.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../samples/TADProduto/.vscode/settings.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../samples/TADProduto/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../samples/TADProduto/build/Debug/exemplo01.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../samples/TADProduto/build/Debug/outDebug.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../samples/TADProduto/exemplo01.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../samples/TADProduto/exemplo02.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LAB01 - Procedural/ex03/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB01 - Procedural/ex03/.idea/.name" afterDir="false" />
@@ -39,21 +44,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2lehZhrI7ug8qzcsECrSAMpv1bL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
