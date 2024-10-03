@@ -6,5 +6,4 @@ public class Candidatos {
      double bens;
      boolean reeleicao;
      int numero_partido;
-
 }
