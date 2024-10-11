@@ -1,17 +1,20 @@
 public class VIP extends Ingresso{
-    private float valorAdicional;
+    private double valorAdicional;
 
-    public float getValorAdicional() {
-        return valorAdicional;
-    }
-
-    public void setValorAdicional(float valorAdicional) {
+    public VIP(double valor,double valorAdicional){
+        super(valor);
         this.valorAdicional = valorAdicional;
     }
 
-    public float valorFinal(){
-        float vf = 0;
-            vf  = getValor() + getValorAdicional();
-            return vf;
+    public double getValorAdicional() {
+        return valorAdicional;
+    }
+
+    public void setValorAdicional(double valorAdicional) {
+        this.valorAdicional = valorAdicional;
+    }
+
+    public double valorFinal(){
+         return getValor() + getValorAdicional();
     }
 }

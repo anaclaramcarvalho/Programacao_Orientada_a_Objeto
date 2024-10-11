@@ -1,15 +1,10 @@
-public class Chefe {
-    private double salario;
+public class Chefe  extends Funcionario{
 
-    public Chefe(double salario){
-        this.salario = salario;
+    public Chefe(String nome , String datadenascimento,double salario){
+        super(nome, datadenascimento,salario);
     }
 
-    public double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
+    public double calcularSalario() {
+        return getSalario();
     }
 }

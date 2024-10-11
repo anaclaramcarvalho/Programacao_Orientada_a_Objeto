@@ -1,20 +1,11 @@
-public class Vendedores {
-    private double salarioF;
+public class Vendedores extends Funcionario{
     private double comissao;
     private double quant;
 
-    public Vendedores(double salarioF,double comissao,double quant){
-            this.salarioF = salarioF;
+    public Vendedores(String nome , String datadenascimento,double salario,double comissao,double quant){
+            super(nome, datadenascimento, salario);
             this.comissao = comissao;
             this.quant = quant;
-    }
-
-    public double getSalarioF() {
-        return salarioF;
-    }
-
-    public void setSalarioF(double salarioF) {
-        this.salarioF = salarioF;
     }
 
     public double getComissao() {
@@ -35,7 +26,7 @@ public class Vendedores {
 
     public double salario(){
         double s;
-        s = getSalarioF() + (getComissao()*getQuant());
+        s = getSalario() + (getComissao()*getQuant());
         return s;
     }
 }

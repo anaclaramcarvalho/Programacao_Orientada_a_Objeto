@@ -3,6 +3,12 @@ public class Funcionario {
     private String datadenascimento;
     private double salario;
 
+    public Funcionario(String nome , String datadenascimento,double salario){
+        this.nome = nome;
+        this.datadenascimento = datadenascimento;
+        this.salario = salario;
+    }
+
     public String getNome() {
         return nome;
     }

@@ -1,8 +1,9 @@
-public class Operario {
+public class Operario extends Funcionario{
     private double valor;
     private int quantidade;
 
-    public Operario(double valor, int quantidade){
+    public Operario(String nome , String datadenascimento,double salario,double valor, int quantidade){
+        super(nome, datadenascimento, salario);
         this.valor = valor;
         this.quantidade = quantidade;
     }

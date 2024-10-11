@@ -1,15 +1,15 @@
 public class Ingresso {
-    private float valor;
+    private double valor;
 
-    public float getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(float valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 
-    public float escreveValor(){
-
+    public double escreveValor() {
+        return valor;
     }
 }
