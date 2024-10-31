@@ -3,7 +3,7 @@ public class Vendedor extends Funcionario{
     private double quant;
 
     public Vendedor(String nome , String datadenascimento,double salario,double comissao,double quant){
-        super(nome, datadenascimento, salario);
+        super(nome, datadenascimento, salario+(comissao*quant));
         this.comissao = comissao;
         this.quant = quant;
     }
@@ -24,9 +24,7 @@ public class Vendedor extends Funcionario{
         this.quant = quant;
     }
 
-    public double salario(){
-        double s;
-        s = getSalario() + (getComissao()*getQuant());
-        return s;
+    public double getPagamento(){
+        return getSalario();
     }
 }

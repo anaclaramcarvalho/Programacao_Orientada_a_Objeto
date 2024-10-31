@@ -2,8 +2,8 @@ public class Operario extends Funcionario{
     private double valor;
     private int quantidade;
 
-    public Operario(String nome , String datadenascimento,double salario,double valor, int quantidade){
-        super(nome, datadenascimento, salario);
+    public Operario(String nome , String datadenascimento,double valor, int quantidade){
+        super(nome, datadenascimento,valor*quantidade);
         this.valor = valor;
         this.quantidade = quantidade;
     }
@@ -24,10 +24,8 @@ public class Operario extends Funcionario{
         this.quantidade = quantidade;
     }
 
-    public double salario(){
-        double s;
-        s = getValor()*getQuantidade();
-        return s;
+    public double getPagamento(){
+        return getSalario();
     }
 }
 

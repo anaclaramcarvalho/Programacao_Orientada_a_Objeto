@@ -2,8 +2,8 @@ public class Horista extends Funcionario{
     private double valorH;
     private double horas;
 
-    public Horista(String nome , String datadenascimento,double salario,double valorH,double horas){
-        super(nome, datadenascimento, salario);
+    public Horista(String nome , String datadenascimento,double valorH,double horas){
+        super(nome, datadenascimento,valorH*horas);
         this.valorH = valorH;
         this.horas = horas;
     }
@@ -24,9 +24,7 @@ public class Horista extends Funcionario{
         this.horas = horas;
     }
 
-    public double salario(){
-        double s;
-        s = getValorH()*getHoras();
-        return s;
+    public double getPagamento(){
+        return getSalario();
     }
 }

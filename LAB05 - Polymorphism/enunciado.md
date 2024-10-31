@@ -11,9 +11,6 @@ Crie as classes correspondentes, adicionando atributos e métodos que achar nece
 
 * Criar o vetor utilizando variáveis do tipo Funcionário, mas instancie os objetos com elementos das subclasses de Funcionario (polimorfismo) *
 
-# Ex 02
-
-Verificar o enunciado no arquivo PDF na pasta correspondente
 
 # Ex 03
 

@@ -2,10 +2,11 @@ public class Main {
     public static void main(String[] args) {
          Empresa empresa = new Empresa();
 
+
         Chefe chefe1 = new Chefe("joão","26/08/2000",1000.00);
-        System.out.println("Salário do chefe: " + chefe1.calcularSalario());
+        System.out.println("Salário do chefe: " + chefe1.salario());
         Chefe chefe2 = new Chefe("Ana","29/12/2001",5000.00);
-        System.out.println("Salário do chefe: " + chefe2.calcularSalario());
+        System.out.println("Salário do chefe: " + chefe2.salario());
 
         Vendedores vendedor = new Vendedores("Júlia", "06/05/1900",1200.00,10.00,20);
         System.out.println("\nSalário do Vendedor: " + vendedor.salario());

@@ -4,7 +4,7 @@ public class Chefe  extends Funcionario{
         super(nome, datadenascimento,salario);
     }
 
-    public double calcularSalario() {
+    public double getPagamento() {
         return getSalario();
     }
 }
