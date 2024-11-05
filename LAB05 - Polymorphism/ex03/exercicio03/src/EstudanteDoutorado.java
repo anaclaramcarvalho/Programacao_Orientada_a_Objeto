@@ -6,17 +6,24 @@ public class EstudanteDoutorado extends EstudantePosGrad {
         this.tituloTese = tituloTese;
     }
 
-    @Override
-    public void print() {
-        super.print();
-        System.out.printf("tituloTese='" + tituloTese + '\'' + '}');
-    }
-
     public String getTituloTese() {
         return tituloTese;
     }
-
     public void setTituloTese(String tituloTese) {
         this.tituloTese = tituloTese;
+    }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.printf(";tituloTese='" + tituloTese + '\'' + '}');
+    }
+    public void print(boolean resposta){
+        if(resposta == true){
+            print();
+        }else{
+            super.print(resposta);
+            System.out.println("Titulo da Tese: " + tituloTese);
+        }
     }
 }

@@ -18,4 +18,13 @@ public class EstudanteGraduacao extends Estudante {
     public void setTituloTCC(String tituloTCC) {
         this.tituloTCC = tituloTCC;
     }
+
+    public void print(boolean resposta){
+        if(resposta == true){
+            print();
+        }else{
+            super.print(resposta);
+            System.out.println("Titulo tcc: "+ tituloTCC);
+        }
+    }
 }

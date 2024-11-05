@@ -11,7 +11,16 @@ public class EstudantePosGrad extends Estudante {
 
     public void print() {
         super.print();
-        System.out.printf(",formacao='" + formacao + '\'' + ", linhadDePesquisa='" + linhaDePesquisa + '\'' );
+        System.out.printf(";formacao='" + formacao + '\'' + "; linhadDePesquisa='" + linhaDePesquisa + '\'' );
+    }
+    public void print(boolean resposta){
+        if(resposta == true){
+            print();
+        }else{
+            super.print(resposta);
+            System.out.println("Tipo de Formação: " + formacao);
+            System.out.println("Linha de Pesquisa: " + linhaDePesquisa);
+        }
     }
 
     public String getFormacao() {

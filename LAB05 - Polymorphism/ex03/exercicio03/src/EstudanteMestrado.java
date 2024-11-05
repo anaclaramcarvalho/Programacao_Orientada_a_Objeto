@@ -9,16 +9,9 @@ public class EstudanteMestrado extends EstudantePosGrad {
         this.tituloDissertacao = tituloDissertacao;
     }
 
-    @Override
-    public void print() {
-        super.print();
-        System.out.printf(",tipo='" + tipo + '\'' + ", tituloDissertacao='" + tituloDissertacao + '\'' + '}');
-    }
-
     public String getTipo() {
         return tipo;
     }
-
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
@@ -26,8 +19,22 @@ public class EstudanteMestrado extends EstudantePosGrad {
     public String getTituloDissertacao() {
         return tituloDissertacao;
     }
-
     public void setTituloDissertacao(String tituloDissertacao) {
         this.tituloDissertacao = tituloDissertacao;
+    }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.printf(";tipo='" + tipo + '\'' + "; tituloDissertacao='" + tituloDissertacao + '\'' + '}');
+    }
+    public void print(boolean resposta){
+        if(resposta == true){
+            print();
+        }else{
+            super.print(resposta);
+            System.out.println("Tipo de Formação: " + tipo);
+            System.out.println("Titulo de Dissertacao: " + tituloDissertacao);
+        }
     }
 }
