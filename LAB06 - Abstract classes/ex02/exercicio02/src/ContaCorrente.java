@@ -1,8 +1,8 @@
-class ContaCorrente{
-    private double saldo;
-    private int estado; // 1 = conta ativa 2 = conta inativa
-    private int numConta;
-    private int senha;
+abstract class  ContaCorrente{
+    protected double saldo;
+    protected int estado; // 1 = conta ativa 2 = conta inativa
+    protected int numConta;
+    protected int senha;
 
     public ContaCorrente(double val,int num,int pwd){
         numConta  = num;
@@ -32,7 +32,7 @@ class ContaCorrente{
     }
 
     public void debitaValor(double val){
-            saldo -= val;
+        saldo -= val;
     }
 
     public double getSaldo(int pwd) {
@@ -42,34 +42,32 @@ class ContaCorrente{
             return -1;//indicando que houve problema na senha
         }
     }
-            public void creditaValor(int pwd, double val){
-                if(senha == pwd){
-                    saldo += val;
-                }
-            }
-
-            protected int getEstado(int pwd){
-                if(senha == pwd){
-                    return estado;
-                }else{
-                    return -1;
-                }
-            }
-
-            protected void setEstado(int pwd,int e){
-                if(senha == pwd){
-                    estado = e;
-                }
-            }
-
-            protected boolean isSenha(int pwd){
-                if(senha == pwd){
-                    return true;
-                }else{
-                    return false;
-                }
-            }
-
+    public void creditaValor(int pwd, double val){
+        if(senha == pwd){
+            saldo += val;
         }
+    }
 
+    protected int getEstado(int pwd){
+        if(senha == pwd){
+            return estado;
+        }else{
+            return -1;
+        }
+    }
 
+    protected void setEstado(int pwd,int e){
+        if(senha == pwd){
+            estado = e;
+        }
+    }
+
+    protected boolean isSenha(int pwd){
+        if(senha == pwd){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+}
