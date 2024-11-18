@@ -4,7 +4,7 @@ public class Main {
         System.out.println("Sim.");
         System.out.printf("No conceito de agregação ,os objetos são independentes? ");
         System.out.println("Sim.");
-        System.out.printf("No conceito de composição , o que acontece com o on=bjeto parte ao remover um objeto todo? ");
+        System.out.printf("No conceito de composição , o que acontece com o objeto parte ao remover um objeto todo? ");
         System.out.println("Se o todo é destruído as partes são destruidas também.");
 
         Veiculos [] veiculos = new Veiculos[3];
