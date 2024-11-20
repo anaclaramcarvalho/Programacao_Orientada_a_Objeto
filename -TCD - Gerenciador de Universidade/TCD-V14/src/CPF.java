@@ -1,4 +1,8 @@
-public class CPF {
+import java.io.Serializable;
+
+public class CPF implements Serializable {
+    private static final long serialVersionUID = 1L; // Adicionar uma versão serial
+
     // ================================= Atributos
     private long cpf;
 
@@ -14,44 +18,45 @@ public class CPF {
         return cpf;
     }
     public void setCpf(long cpf) {
-        if (validarCpf(cpf))
+        if (validarCpf(cpf)) {
             this.cpf = cpf;
-        else
-            System.out.println("\nERRO. CPF INVALIDO.\n");
+        } else {
+            throw new ErroArgumentoException("ERRO. CPF inválido.");
+        }
     }
 
-
-    // ================================= Outros Métodos
     private boolean validarCpf(long cpf) {
-        String auxiliar = String.format("%011d", cpf);
+        String auxiliar = String.format("%011d", cpf); // Formata para 11 dígitos
 
+        // Verifica se todos os números são iguais ou tamanho diferente de 11
         if (auxiliar.matches("(\\d)\\1{10}") || auxiliar.length() != 11) {
             return false;
         }
 
+        // Calcula o primeiro dígito verificador
         int soma = 0;
         for (int i = 0; i < 9; i++) {
             soma += Character.getNumericValue(auxiliar.charAt(i)) * (10 - i);
         }
-    
-        int primeiroDigito = 11 - (soma % 11);
-        if (primeiroDigito > 9) 
-            primeiroDigito = 0;
+        int primeiroDigito = calcularDigito(soma);
 
+        // Calcula o segundo dígito verificador
         soma = 0;
-        for (int i = 0; i < 10; i++) 
+        for (int i = 0; i < 10; i++) {
             soma += Character.getNumericValue(auxiliar.charAt(i)) * (11 - i);
+        }
+        int segundoDigito = calcularDigito(soma);
 
-        int segundoDigito = 11 - (soma % 11);
-        if (segundoDigito > 9) 
-            segundoDigito = 0;
-
+        // Valida os dois dígitos verificadores
         return Character.getNumericValue(auxiliar.charAt(9)) == primeiroDigito
                 && Character.getNumericValue(auxiliar.charAt(10)) == segundoDigito;
-
-        /* Esse retorno basicamente retorna true se o primeiroDigito e o segundoDigito forem iguais aos digitos
-        verificadores  nos ultimos dois digitos do cpf, (auxiliar.carAt(9) e auxiliar.char.At(10)) */
     }
+
+    private int calcularDigito(int soma) {
+        int digito = 11 - (soma % 11);
+        return (digito > 9) ? 0 : digito;
+    }
+
 
     @Override
     public String toString() {
